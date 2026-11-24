@@ -1,0 +1,10 @@
+Rule,Support,Confidence,Lift,Dependency
+['Y'] -> ['K'],0.6,1.0,1.0,independent
+['O'] -> ['K'],0.6,1.0,1.0,independent
+['M'] -> ['K'],0.6,1.0,1.0,independent
+['O'] -> ['E'],0.6,1.0,1.25,positive
+['E'] -> ['K'],0.8,1.0,1.0,independent
+"['O'] -> ['E', 'K']",0.6,1.0,1.25,positive
+"['E', 'O'] -> ['K']",0.6,1.0,1.0,independent
+"['K', 'O'] -> ['E']",0.6,1.0,1.25,positive
+['K'] -> ['E'],0.8,0.8,1.0,independent
